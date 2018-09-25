@@ -1,0 +1,110 @@
+{
+    "collaborators": [
+        "yatish",
+        "yhegde"
+    ],
+    "created_at": "2018-09-22 15:27:47",
+    "edges": [
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "raw_data.csv",
+            "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "clean",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean.R",
+            "target": "data.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "type": "csv"
+                }
+            ],
+            "source": "data.csv",
+            "target": "analysis.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "img",
+                    "type": "png"
+                }
+            ],
+            "source": "clean.R",
+            "target": "plot2889.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "txt",
+                    "type": "txt"
+                }
+            ],
+            "source": "clean.R",
+            "target": "text1281.txt"
+        },
+        {
+            "ports": [
+                {
+                    "input": "var1",
+                    "output": "var1",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "analysis.R",
+            "target": "script6777.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df2",
+                    "type": "csv"
+                }
+            ],
+            "source": "data.csv",
+            "target": "script6068.R"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "raw_data.csv"
+        },
+        {
+            "assigned_to": "yatish",
+            "name": "clean.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "data.csv"
+        },
+        {
+            "name": "analysis.R"
+        },
+        {
+            "name": "plot2889.png"
+        },
+        {
+            "name": "text1281.txt"
+        },
+        {
+            "name": "script6777.R"
+        },
+        {
+            "name": "script6068.R"
+        }
+    ],
+    "updated_at": "2018-09-25 03:50:28",
+    "url": "https://github.com/fall2018-saltz/test"
+}
